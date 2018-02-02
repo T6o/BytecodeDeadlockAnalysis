@@ -1,0 +1,62 @@
+Classfile /C:/workspace/BytecodeDeadlockAnalysis/output_DeadlockAnalysis/classFiles/philosophers/Fork.class
+  Last modified Dec 3, 2015; size 320 bytes
+  MD5 checksum a718f127218fdd27f88cd9f452f0a838
+  Compiled from "DiningPhilosopher.java"
+class philosophers.Fork
+  SourceFile: "DiningPhilosopher.java"
+  minor version: 0
+  major version: 51
+  flags: ACC_SUPER
+Constant pool:
+   #1 = Methodref          #4.#15         //  java/lang/Object."<init>":()V
+   #2 = Fieldref           #3.#16         //  philosophers/Fork.number:I
+   #3 = Class              #17            //  philosophers/Fork
+   #4 = Class              #18            //  java/lang/Object
+   #5 = Utf8               number
+   #6 = Utf8               I
+   #7 = Utf8               <init>
+   #8 = Utf8               (I)V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               getNumber
+  #12 = Utf8               ()I
+  #13 = Utf8               SourceFile
+  #14 = Utf8               DiningPhilosopher.java
+  #15 = NameAndType        #7:#19         //  "<init>":()V
+  #16 = NameAndType        #5:#6          //  number:I
+  #17 = Utf8               philosophers/Fork
+  #18 = Utf8               java/lang/Object
+  #19 = Utf8               ()V
+{
+  private int number;
+    Signature: I
+    flags: ACC_PRIVATE
+
+
+  public philosophers.Fork(int);
+    Signature: (I)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0       
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0       
+         5: iload_1       
+         6: putfield      #2                  // Field number:I
+         9: return        
+      LineNumberTable:
+        line 76: 0
+        line 77: 4
+        line 78: 9
+
+  public int getNumber();
+    Signature: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: getfield      #2                  // Field number:I
+         4: ireturn       
+      LineNumberTable:
+        line 81: 0
+}
